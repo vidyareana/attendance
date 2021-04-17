@@ -14,8 +14,6 @@ if(!$_GET ['id']){
     }else{
         include 'includes/errormessage.php';
 }
-
-
-
+}
 
 ?>
