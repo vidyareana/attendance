@@ -5,10 +5,10 @@
     // $pass = '';
     // $charset = 'utf8mb4';
 
-    $host = 'sql6.freesqldatabase.com';
-    $db = 'sql6406717';
-    $user = 'sql6406717';
-    $pass = 'YAaqMKEDUQ';
+    $host = 'remotemysql.com';
+    $db = 'ZhJFWx147Y';
+    $user = 'ZhJFWx147Y';
+    $pass = 'ilWOCOPzlm';
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host = $host;dbname=$db;charset=$charset";
@@ -16,7 +16,7 @@
     try{
         $pdo = new PDO($dsn, $user, $pass);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-       // echo "Hello database";
+      // echo "Hello database";
     }catch(PDOException $e){
         throw new Exception($e->getMessage());
         //echo "<h1 class='text-danger'>NO database found</h1>";
